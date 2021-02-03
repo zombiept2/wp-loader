@@ -200,7 +200,7 @@ class Setup
 	* Recursively removes a directory
 	* @param string $dir
 	*/
-    function recursiveRemoveDirectory($dir) 
+    static public function recursiveRemoveDirectory($dir) 
     {
         $files = array_diff(scandir($dir), array('.','..'));
         foreach ($files as $file) 
